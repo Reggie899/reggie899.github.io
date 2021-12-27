@@ -5,32 +5,24 @@
     box-sizing: border-box;
 }
 
-/*
-
-.container {
-    position: absolute;
-    display: flex;
-    height: 100vh;
-z-index: 0;
-}
-*/
-h1 {margin-left: 30%;
+h1 {margin-left: 5%;
     font-family: 'Rock 3D', cursive;
     letter-spacing: -20px;
     font-size: 190px;
     /*writing-mode: vertical-rl;
     text-orientation: upright;   */
-    color: lightblue;
+    color: rgb(219, 173, 230);
     z-index: 8;
     width: fit-content;
-    border: 1px solid black;
+    border: 1px black solid;
    }
 
    .flex {
-     display: flex;
      justify-content: space-evenly;
-   } 
-/*
+     border:rgb(27, 26, 26) 1px solid; 
+     display: flex;
+   
+
 
 -webkit-background-clip: text;
  
@@ -39,25 +31,20 @@ h1 {margin-left: 30%;
      background-size: cover;
      animation: animate 15s linear infinite;
 }
-/*
-h2 {
-    display: flex;
-    position: absolute;
-    z-index: 3;
-    bottom: -0;
-    margin-bottom: 10%;
-    margin-left: 130px;
-    font-size: 90px;
-}
-*/
+
+
+
     @keyframes animate {
         0% {
             background-position: left 10px top 0px;
         }
         40% {
-            background-position: left 10% bottom 100px;
+            background-position: left 100px bottom 100px;
         }
-        
+        60% {
+          background-image: none;
+          background-color: royalblue;
+        }
     }
 
 body {
@@ -135,10 +122,12 @@ opacity: 0.6;
  }
 
  .snake {
+   display: flex;
    transform: rotateX(180deg);
-   position: absolute;
-   margin-left: 100px;
-   margin-top: -260px;
+   position: relative;
+   border: 1px solid black; 
+justify-content: center;
+   margin-top: -160px;
  }
 
 
@@ -146,7 +135,7 @@ opacity: 0.6;
   display: flex;
   justify-content: space-evenly;
   position: relative;
-bottom: -800px;
+bottom: -100px;
 padding-bottom: 15%;
 
 }
