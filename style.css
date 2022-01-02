@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: rgb(108, 81, 195);
+  --text-color-main: white;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: var(--primary-color);
+}
+
+container-fluid {
+  color: var(--text-color-main);
+  display: block;
+}
+
+.web-developer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0 2% 0;
+}
+
+footer {
+  color: var(--primary-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--text-color-main);
+}
+
+.info-update {
+  width: 110px;
+}
+
+.castle-image {
+  margin-left: -80px;
+}
+
+.explore-work-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-work-style {
+  border: 1px solid var(--text-color-main);
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
