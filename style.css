@@ -21,7 +21,6 @@ body {
 
 container-fluid {
   color: var(--text-color-main);
-  display: block;
 }
 
 .web-developer {
@@ -49,38 +48,37 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 3;
   background-color: var(--text-color-main);
 }
 
 .info-update {
   width: 110px;
+ 
 }
 
-.castle-image {
-  margin-left: -80px;
-}
 
-.explore-work-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
 
 .explore-work-style {
   border: 1px solid var(--text-color-main);
   font-size: 20px;
   text-align: center;
   width: 100px;
-}
+  grid-column: 1;
+  margin-left: 10%;
+  grid-row: 3;}
 
 
 
-.btn {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  transition: 0.2s;
-/*}
+
+span1
+ {
+  font-size: 10px;
+  background-color: black;
+ /*}
 
 .btn:hover {*/
   color: var(--primary);
@@ -89,14 +87,16 @@ footer {
     0 0 60px var(--primary), 0 0 60px var(--primary),
     0 0 60px var(--primary);
   transition-delay: 1.5s;
-  /*animation: font-color 0.5s 1s forwards;*/
   cursor: pointer;
+width: 100%;
+height: 400px;
 }
 
-.btn span {
-  position: absolute;
-  display: block;
-}
+
+
+
+
+
 
 .btn span:nth-child(1) {
   top: 0;
@@ -113,7 +113,7 @@ footer {
 
 .btn span:nth-child(3) {
   bottom: 0;
-  transform: translateX(10%);
+  transform: translateX(100%);
   width: 100%;
   height: 1px;
   background: linear-gradient(270deg, transparent, var(--primary));
@@ -159,3 +159,45 @@ footer {
 
 
 
+@keyframes myAnim {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 0% 100%;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+  }
+}
+
+
+     /*<div class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>*/
+
+
+.main {
+  display: grid;
+  grid-template-columns: 20px, 80px;
+  grid-template-rows: repeat(6, 70px);
+  
+}
+
+.span {
+  z-index: 1;
+  position: relative;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  grid-column: 2;
+  grid-row: 1 /span 6;
+background-color: pink;
+width: 100%}
+
+.castle-image {
+  z-index: 2;
+
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 /span 5;}
