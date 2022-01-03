@@ -24,6 +24,8 @@ container-fluid {
 }
 
 .web-developer {
+  color: var(--text-color-main);
+
   display: flex;
   justify-content: center;
   margin-top: 3%;
@@ -31,6 +33,7 @@ container-fluid {
 }
 
 h1 {
+  color: var(--text-color-main);
   font-size: 60px;
   display: flex;
   justify-content: center;
@@ -38,6 +41,8 @@ h1 {
 }
 
 .slogan {
+  color: var(--text-color-main);
+
   display: flex;
   justify-content: center;
   margin: 2% 0 2% 0;
@@ -55,33 +60,7 @@ footer {
 .info-update {
   width: 110px;
  
-}
-
-
-
-
-
-
-.explore-work-style {
-  border: 1px solid var(--text-color-main);
-  font-size: 20px;
-  text-align: center;
-  width: 100px;
-  grid-column: 1;
-  margin-left: 10%;
-  grid-row: 3;}
-
-
-
-
-
-
-
-
-
-
-
-  
+}  
 
 
 
@@ -108,16 +87,14 @@ footer {
 }
 
 
-
-
 .main {
   display: grid;
-  grid-template-columns: 20px, 80px;
+  grid-template-columns: auto;
   grid-template-rows: repeat(6, 70px);
   
 }
 
-span {
+.span-rays {
   background-color: white;
 padding: 15px ;}
 
@@ -128,21 +105,69 @@ transition: 2s;
   justify-content: space-evenly;
   z-index: 1;
   position: relative;
-  animation: myAnim 1.8s ease 0s 1 normal forwards;
-  grid-column: 1 /span 2;
+  grid-column: 1 /span 3;
   grid-row: 1 /span 6;
 width: 100%}
+
+.span-ray1 {
+  animation: myAnim-ray1 1.8s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim-ray1 {
+  0% {
+    transform: scaleY(0) rotate(-45deg);
+    transform-origin: 0% 110%;
+  }
+5% {
+  transform: scaleY(2) scaleX(1.1) rotate(-45deg);
+  background-color: white;
+}
+  100% {
+    transform: scaleY(2) scaleX(1.5) rotate(25deg) translateX(200px);
+    transform-origin: 0% 70%;
+    -webkit-box-shadow: -2px -50px 50px 50px #FFFFFF; 
+    box-shadow: -2px -50px 50px 50px #FFFFFF;
+    background-color: white;
+    opacity: 0.75;
+
+  }
+}
+
+.span-ray2 {
+  animation: myAnim-ray2 1.8s ease forwards;
+}
+
+@keyframes myAnim-ray2 {
+  0% {
+    transform: scaleY(0) rotate(-45deg);
+    transform-origin: 0% 110%;
+  }
+5% {
+  transform: scaleY(1.1) rotate(-65deg);
+  background-color: white;
+}
+  100% {
+    transform: scaleY(2) rotate(-65deg) translateX(100px);
+    transform-origin: 0% 70%;
+    -webkit-box-shadow: -2px -50px 50px 50px #FFFFFF; 
+    box-shadow: -2px -50px 50px 50px #FFFFFF;
+    background-color: white;
+    opacity: 0.75;
+
+  }
+}
+
+
 
 
 .span-ray {
   visibility: hidden;
 
-  font-size: 30px;
     display: flex;
     justify-content: space-evenly;
     z-index: 10;
     position: relative;
-    grid-column: 1 /span 2;
+    grid-column: 1 /span 3;
     grid-row: 1 /span 6;
   width: 120%;
 animation: rays 1.6s 1.1S ease forwards;}
@@ -186,7 +211,75 @@ opacity: 0.2;
 
 .castle-image {
   z-index: 2;
+  margin-left: 10%;
 
   position: relative;
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1 /span 5;}
+
+
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes bg {
+    100% {
+      background-color: var(--text-color-main);
+    }
+  }
+
+  @keyframes box-shadow {
+    100% {
+      -webkit-box-shadow: 3px 3px 62px 40px rgba(131, 67, 216, 0.75);
+      box-shadow: 3px 3px 62px 40px rgba(238, 245, 243, 0.75);
+      /*background-color: rgb(54, 183, 243);*/
+    }
+  }
+
+
+  
+  .light-box-surround {
+    animation: box-shadow 0.5s 1.3s linear forwards, bg 0.5s 1.2s forwards;
+border-radius: 50%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    grid-column: 2 /span 2;
+    grid-row: 2 / span 2;
+    z-index: 8;
+    margin-top: -20px;
+  }
+  
+  .light-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+  }
+
+
+  .explore-work-style {
+    font-size: 15px;
+    text-align: center;
+    width: 100px;
+    color: var(--text-color-main);
+    font-weight: bolder;
+    border-radius: 5%;
+    padding: 13px;
+}
+  
+
+
+  
+
+
+
+
+
+
