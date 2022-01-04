@@ -14,6 +14,10 @@ body {
   background-color: var(--primary-color);
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
   color: var(--primary-color);
@@ -45,7 +49,7 @@ h1 {
 
   display: flex;
   justify-content: center;
-  margin: 2% 0 2% 0;
+  margin: 2% 0 3% 0;
 }
 
 footer {
@@ -55,6 +59,8 @@ footer {
   width: 100%;
   z-index: 3;
   background-color: var(--text-color-main);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .info-update {
@@ -88,15 +94,13 @@ footer {
 
 
 .main {
+  margin-top: 3%;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(6, 70px);
   
 }
 
-.span-rays {
-  background-color: white;
-padding: 15px ;}
 
 
 .span {
@@ -111,6 +115,8 @@ width: 100%}
 
 .span-ray1 {
   animation: myAnim-ray1 1.8s ease 0s 1 normal forwards;
+  position: relative;
+  bottom: -200px;
 }
 
 @keyframes myAnim-ray1 {
@@ -119,11 +125,11 @@ width: 100%}
     transform-origin: 0% 110%;
   }
 5% {
-  transform: scaleY(2) scaleX(1.1) rotate(-45deg);
+  transform: scaleY(5) scaleX(1.1) rotate(-45deg);
   background-color: white;
 }
   100% {
-    transform: scaleY(2) scaleX(1.5) rotate(25deg) translateX(200px);
+    transform: scaleY(5) scaleX(1.5) rotate(25deg) translateX(200px);
     transform-origin: 0% 70%;
     -webkit-box-shadow: -2px -50px 50px 50px #FFFFFF; 
     box-shadow: -2px -50px 50px 50px #FFFFFF;
@@ -134,11 +140,14 @@ width: 100%}
 }
 
 .span-ray2 {
-  animation: myAnim-ray2 1.8s ease forwards;
+  animation: myAnim-ray2 1.8s 2s ease forwards;
+  visibility: hidden;
+
 }
 
 @keyframes myAnim-ray2 {
   0% {
+    visibility: visible;
     transform: scaleY(0) rotate(-45deg);
     transform-origin: 0% 110%;
   }
@@ -157,20 +166,105 @@ width: 100%}
   }
 }
 
+.span-ray3 {
+  animation: myAnim-ray3 1.8s ease forwards;
+}
 
+@keyframes myAnim-ray3 {
+  0% {
+    transform: scaleY(0) rotate(-65deg);
+    transform-origin: 5% 110%;
+  }
+5% {
+  transform: scaleY(2) scaleX(1.1) rotate(-45deg);
+  background-color: white;
+}
+  100% {
+    transform: scaleY(2) scaleX(1.5) rotate(0deg) translateX(220px);
+    transform-origin: 0% 70%;
+    -webkit-box-shadow: -2px -50px 50px 50px #FFFFFF; 
+    box-shadow: -2px -50px 50px 50px #FFFFFF;
+    background-color: white;
+    opacity: 0.75;
+
+  }
+}
+
+.span-ray4 {
+  animation: myAnim-ray4 1.8s ease forwards;
+position: relative;
+right: 10px}
+
+@keyframes myAnim-ray4 {
+  0% {
+    transform: scaleY(0) rotate(-15deg);
+    transform-origin: 0% 110%;
+  }
+5% {
+  transform: scaleY(2) scaleX(1.1) rotate(-55deg);
+  background-color: white;
+}
+  99% {
+    transform: scaleY(2) scaleX(1.1) rotate(-10deg) translateX(250px);
+    transform-origin: 0% 70%;
+    -webkit-box-shadow: -2px -50px 50px 50px #FFFFFF; 
+    box-shadow: -2px -50px 50px 50px #FFFFFF;
+    background-color: white;
+    opacity: 0.75;
+
+  }
+  100% {
+visibility: hidden;
+  }
+}
+
+.span-ray5 {
+  
+  visibility: hidden;
+  animation: myAnim-ray5 1.6s 1.4s ease forwards;
+position: relative;
+right: -150px;
+bottom: -30px}
+
+@keyframes myAnim-ray5 {
+  0% { visibility: visible; 
+     transform: scaleY(3) scaleX(1.1) rotate(90deg) translateX(100px);
+    transform-origin: 0% 100%;
+  }
+5% {
+  transform: scaleY(3) scaleX(1.1) rotate(40deg);
+  background-color: white;
+}
+  97% {
+    transform: scaleY(3) rotate(-45deg);
+    transform-origin: 0% 110%;
+
+    -webkit-box-shadow: -2px -50px 50px 50px #FFFFFF; 
+    box-shadow: -2px -50px 50px 50px #FFFFFF;
+    background-color: white;
+    opacity: 0.75;
+
+  }
+  100% {
+visibility: hidden;
+  }
+}
+
+.span-rays {
+  background-color: white;
+padding: 15px ;}
 
 
 .span-ray {
   visibility: hidden;
-
+z-index: 10;
     display: flex;
     justify-content: space-evenly;
-    z-index: 10;
     position: relative;
     grid-column: 1 /span 3;
     grid-row: 1 /span 6;
   width: 120%;
-animation: rays 1.6s 1.1S ease forwards;}
+}
 
   @keyframes rays {
     0% {
@@ -219,11 +313,11 @@ opacity: 0.2;
 
 
 
-  @keyframes rotate {
+  /*@keyframes rotate {
     100% {
       transform: rotate(360deg);
     }
-  }
+  }*/
 
   @keyframes bg {
     100% {
@@ -242,7 +336,7 @@ opacity: 0.2;
 
   
   .light-box-surround {
-    animation: box-shadow 0.5s 1.3s linear forwards, bg 0.5s 1.2s forwards;
+    animation: box-shadow 0.8s 3.4s linear forwards, bg 0.8s 3.4s forwards;
 border-radius: 50%;
     position: relative;
     width: 100px;
@@ -251,7 +345,7 @@ border-radius: 50%;
     grid-column: 2 /span 2;
     grid-row: 2 / span 2;
     z-index: 8;
-    margin-top: -20px;
+    margin-top: -52px;
   }
   
   .light-box {
@@ -265,16 +359,32 @@ border-radius: 50%;
 
 
   .explore-work-style {
-    font-size: 15px;
+visibility: hidden;    display: flex;
+align-items: center;
+    font-size: 14px;
     text-align: center;
     width: 100px;
     color: var(--text-color-main);
     font-weight: bolder;
     border-radius: 5%;
     padding: 13px;
+    position: relative;
+    color: rgba(224, 224, 171, 0.507);
+    animation: explore-appear 1s 4s ease-in forwards ;
 }
   
-
+@keyframes explore-appear {
+  0%{visibility: visible;
+  opacity: 0.2;}
+  20%{visibility: visible;
+    opacity: 0.4;}
+    50%{visibility: visible;
+      opacity: 0.6;}
+      70%{visibility: visible;
+        opacity: 0.8;}
+        100%{visibility: visible;
+          opacity: 1;}
+}
 
   
 
