@@ -492,3 +492,20 @@ img {
    transform: translateY(100px) translateX(-100px);
  }
 }
+
+p {
+  color: rgb(85, 109, 82);
+  background-color: rgba(250, 235, 215, 0.466);
+  margin-top: 300px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.buttons {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
