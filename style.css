@@ -400,12 +400,16 @@ align-items: center;
   
 /* About me Page - Relevant:*/ 
 
+.roof {
+  position: relative;
+  z-index: -5;
+}
 
 img {
   margin-top: 3%;
   margin-left: 3%;
   border-radius: 1%;
-
+  
 }
 
 .myImage {
@@ -415,6 +419,7 @@ img {
 
 .about {
   margin-top: 30px;
+ 
 }
 
 .about-animation {
@@ -424,10 +429,23 @@ img {
   top: 400px;
   position: absolute;
   z-index: 1;
-  background-color: rgba(245, 194, 136, 0.557);
+  background-color: rgba(230, 206, 178, 0.557);
+}
+
+
+.me-animation {
+  width: 300px;
+  height: 200px;
+  right: 0;
+  top: 400px;
+  position: absolute;  z-index: 10;
+  background-color: rgba(230, 206, 178, 0.557);
+
 }
 
 .me {
+  color: rgba(235, 225, 208, 0.781);
+
   margin-top: 20px;
   animation: me 3s forwards;
 }
@@ -440,4 +458,37 @@ img {
 15% {
   transform: translateY(100px) ;
 }
+
+ 20%{
+  transform: translateY(100px) translate3d(-1px, 0, 0) rotate(-25deg);
+}
+
+25% {
+  transform: translateY(100px) translate3d(2px, 0, 0) rotate(25deg);
+}
+
+30%, 50% {
+  transform: translateY(100px) rotate(-25deg) translate3d(-4px, 0, 0);
+}
+
+40% {
+  transform: translateY(100px) translateX(-200px);
+}
+
+60% {
+  transform: translateY(-100px) rotate(9deg) translate3d(-4px, 0, 0)  translateX(-200px);
+}
+
+ 65% {
+  transform: translate3d(4px, 0, 0) translateY(100px) translateX(-200px) rotate(-5deg);
+}
+
+70% {
+  transform: translateY(100px) translateX(-200px) rotate(-25deg) translate3d(-4px, 0, 0);
+
+}
+
+ 100% {
+   transform: translateY(100px) translateX(-100px);
+ }
 }
