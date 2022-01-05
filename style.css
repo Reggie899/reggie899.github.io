@@ -375,13 +375,18 @@ align-items: center;
     font-size: 14px;
     text-align: center;
     width: 100px;
-    color: var(--text-color-main);
     font-weight: bolder;
     border-radius: 5%;
     padding: 13px;
     position: relative;
-    color: rgba(224, 224, 171, 0.507);
-    animation: explore-appear 1s 4s ease-in forwards ;
+}
+
+.explore-work-style a {
+  color: rgba(224, 224, 171, 0.507);
+
+  text-decoration: none;
+  animation: explore-appear 1s 4s ease-in forwards ;
+
 }
   
 @keyframes explore-appear {
