@@ -410,12 +410,12 @@ align-items: center;
   z-index: -5;
 }
 
-img {
+/*img {
   margin-top: 3%;
   margin-left: 3%;
   border-radius: 1%;
   
-}
+}*/
 
 .myImage {
   position: relative;
@@ -556,3 +556,24 @@ p {
   position: relative;
 }
 
+/* My Work Page - Relevant:*/ 
+
+.work-1 {
+  display: flex; 
+  justify-content: center;
+  margin-top: 15%; 
+  margin-bottom: 5%;
+}
+
+.card-img-top {
+  width: 250px;
+  margin-top: 20px;
+  display: inline-block;
+  margin-bottom: 30px;
+} 
+
+
+
+.card-body {
+  margin-top: -300px;
+}
