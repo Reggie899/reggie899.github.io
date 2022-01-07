@@ -536,12 +536,15 @@ margin-right: -200px;
  }
 }
 
+.text-me {
+  margin-top: 300px;
+  margin-bottom: 10px;
+}
+
 p {
   color: rgb(85, 109, 82);
   background-color: rgba(250, 235, 215, 0.466);
-  margin-top: 300px;
-  margin-bottom: 10px;
-  padding: 30px;
+  padding: 40px;
 }
 
 .buttons {
@@ -555,6 +558,21 @@ p {
 .main2 {
   position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* My Work Page - Relevant:*/ 
 
@@ -615,3 +633,24 @@ p {
   width: 80%;
 margin: 10%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mission Page - Relevant:*/ 
+
+
