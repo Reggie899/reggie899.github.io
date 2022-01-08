@@ -29,6 +29,7 @@ container-fluid {
 
 .web-developer {
   color: var(--text-color-main);
+  font-family: 'Rock 3D', cursive;
 
   display: flex;
   justify-content: center;
@@ -37,6 +38,7 @@ container-fluid {
 }
 
 h1 {
+
   color: var(--text-color-main);
   font-size: 60px;
   display: flex;
@@ -46,7 +48,6 @@ h1 {
 
 .slogan {
   color: var(--text-color-main);
-
   display: flex;
   justify-content: center;
   margin: 2% 0 3% 0;
@@ -402,6 +403,7 @@ footer {
 }
 
 .explore-work-style a {
+  
   color: rgba(224, 224, 171, 0.507);
 
   text-decoration: none;
@@ -747,8 +749,7 @@ p {
 }
 
 .letter {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3.5em;
+  font-family: 'Rock 3D', cursive;  font-size: 3.5em;
   color: lightslategray;
 
 }
@@ -815,101 +816,94 @@ p {
 
 .letter-10 {
   animation: lighting 2s infinite linear;
-  animation-delay: 1.9s;
+  animation-delay: 1.8s;
 }
 
 .letter-11 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2s;
+  animation-delay: 1.9s;
 }
 
 .letter-12 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.1s;
+  animation-delay: 2s;
 }
 
 .letter-13 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.2s;
+  animation-delay: 2.1s;
 }
 
 .letter-14 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.3s;
+  animation-delay: 2.2s;
 }
 
 .letter-15 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.4s;
+  animation-delay: 2.3s;
 }
 
 .letter-16 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.5s;
+  animation-delay: 2.4s;
 }
 
 .letter-17 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.6s;
+  animation-delay: 2.5s;
 }
 
 .letter-18 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.7s;
+  animation-delay: 2.6s;
 }
 .letter-20 {
   animation: lighting 2s infinite linear;
-  animation-delay: 2.9s;
+  animation-delay: 2.8s;
 }
 .letter-21 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3s;}
+  animation-delay: 2.9s;}
 
   .letter-22 {
     animation: lighting 2s infinite linear;
-    animation-delay: 3.1s;
+    animation-delay: 3s;
 }
 .letter-24 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.2s;
+  animation-delay: 3.1s;
 }
 .letter-25 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.3s;
+  animation-delay: 3.2s;
 }
 .letter-26 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.4s;
+  animation-delay: 3.3s;
 }
 .letter-27 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.5s;
+  animation-delay: 3.4s;
 }
 .letter-28 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.6s;
+  animation-delay: 3.5s;
 }
 .letter-29 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.7s;
+  animation-delay: 3.6s;
 }
 
 .letter-30 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.8s;
+  animation-delay: 3.7s;
 }
 
 .letter-31 {
   animation: lighting 2s infinite linear;
-  animation-delay: 3.9s;
+  animation-delay: 3.8s;
 }
-
-
-
-
-
-
-
 
 .slide-right {
   width: 100%;
@@ -939,3 +933,14 @@ p {
 
 
 }
+
+/* Contact Page - Relevant:*/
+
+.key {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
