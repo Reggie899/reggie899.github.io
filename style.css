@@ -11,17 +11,24 @@
 }
 
 body {
-  background: rgb(5,6,33);
+
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, var(--primary-color) 0%, rgba(98,68,190,1) 33%, rgba(18,38,103,1) 59%, rgba(22,20,59,1) 92%);
+/*
+background: rgb(182,84,235);
+background: linear-gradient(0deg, rgba(182,84,235,1) 0%, rgba(98,68,190,1) 33%, rgba(18,38,103,1) 59%, rgba(22,20,59,1) 92%);
+
+
+
+  background: linear-gradient(90deg, rgba(5,6,33,1) 0%, rgba(8,8,37,0.20211834733893552) 44%, rgba(224,224,224,1) 100%);
+  /*background: rgb(5,6,33);
 background: linear-gradient(90deg, rgba(5,6,33,1) 0%, rgba(45,47,166,0.20211834733893552) 44%, rgba(158,59,185,1) 100%);
-  
-  
-  
   
   /*background: rgb(10,15,140);
 background: linear-gradient(90deg, rgba(10,15,140,1) 0%, rgba(158,45,166,1) 56%, rgba(158,59,185,1) 100%);
   /*background: rgb(158,59,185);
-  /*background: linear-gradient(90deg, rgba(158,59,185,1) 0%, rgba(114,9,121,1) 35%, rgba(0,212,255,1) 100%);
-  /*background-color: var(--primary-color);*/
+  /*background: linear-gradient(90deg, rgba(158,59,185,1) 0%, rgba(114,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+ /* background-color: var(--primary-color);*/
 }
 
 .wrapper {
@@ -34,7 +41,10 @@ background: linear-gradient(90deg, rgba(10,15,140,1) 0%, rgba(158,45,166,1) 56%,
   font-family: 'Rock 3D', cursive;
 }
 
-
+.navbar-light .navbar-toggler {
+  color: var(--primary-color);
+  border-color: rgba(92, 92, 92, 0.1);
+}
 
 .nav-item {
   font-family: 'Nova Mono', monospace;
@@ -486,20 +496,26 @@ footer {
 }*/
 
 .myImage {
+  width: 300px;
+  height: 400px;
   position: relative;
   z-index: 2;
-}
+  border-radius:  15px 50px 30px 5px;
+background-image: url(./meToon.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position-y: 30px;
+transform: rotate(3deg);}
 
 .about {
-  margin-top: 60px;
-  margin-left: -20px;
+  margin-top: 90px;
 }
 
 .about-animation {
   width: 300px;
   height: 300px;
   right: 0;
-  top: 300px;
+  top: 325px;
   position: absolute;
   z-index: 1;
   background-color: rgba(230, 206, 178, 0.557);
@@ -640,7 +656,7 @@ footer {
   }
 
   100% {
-    transform: translateY(160px) translateX(-70px);
+    transform: translateY(190px) translateX(-70px);
   }
 }
 
@@ -657,13 +673,7 @@ font-size: 1.2em;
 letter-spacing: 0.19em;
 }
 
-.buttons {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
+
 
 .main2 {
   position: relative;
