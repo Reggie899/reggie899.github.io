@@ -21,6 +21,8 @@ body {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
   color: var(--primary-color);
+  font-family: 'Rock 3D', cursive;
+
 }
 
 container-fluid {
@@ -38,8 +40,7 @@ container-fluid {
 }
 
 h1 {
-  font-family: 'Rock 3D', cursive;
-  
+  font-family: 'Permanent Marker', cursive;  
   color: var(--text-color-main);
   font-size: 60px;
   display: flex;
