@@ -19,14 +19,28 @@ body {
 }
 
 .navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
+.navbar-custom .navbar-text  {
   color: var(--primary-color);
   font-family: 'Rock 3D', cursive;
+}
+
+
+
+.nav-item {
+  font-family: 'Nova Mono', monospace;
 
 }
 
-container-fluid {
-  color: var(--text-color-main);
+.navbar-light .navbar-nav .nav-link {
+  color: var(--primary-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-family: 'Rock 3D', cursive;
+  letter-spacing: 1.5em;
+  font-size: 1.1em;
 }
 
 .web-developer {
@@ -35,12 +49,17 @@ container-fluid {
 
   display: flex;
   justify-content: center;
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 2%;
   font-size: 20px;
 }
 
-h1 {
+.myNameHome {
   font-family: 'Permanent Marker', cursive;  
+
+}
+
+h1 {
   color: var(--text-color-main);
   font-size: 60px;
   display: flex;
@@ -53,6 +72,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 2% 0 3% 0;
+font-family: 'Nova Mono', monospace;letter-spacing: 1.5px;
 }
 
 footer {
@@ -116,7 +136,7 @@ footer {
   position: relative;
   grid-column: 1 /span 3;
   grid-row: 1 /span 6;
-  width: 100%
+  width: 100%;
 }
 
 .span-ray1 {
@@ -462,7 +482,7 @@ footer {
 
 .about {
   margin-top: 60px;
-  margin-left: -70px;
+  margin-left: -20px;
 }
 
 .about-animation {
@@ -473,6 +493,8 @@ footer {
   position: absolute;
   z-index: 1;
   background-color: rgba(230, 206, 178, 0.557);
+  font-family: 'Rock 3D', cursive;
+
 }
 
 
@@ -488,11 +510,13 @@ footer {
 }
 
 .me {
-  color: rgba(235, 225, 208, 0.781);
+  color: var(--text-color-main);
   /*margin-top: -200px;*/
 
   margin-right: -200px;
   animation: me 7s forwards;
+  font-family: 'Rock 3D', cursive;
+
 }
 
 @keyframes me {
@@ -616,9 +640,11 @@ footer {
 }
 
 p {
-  color: rgb(85, 109, 82);
-  background-color: rgba(250, 235, 215, 0.466);
+  color: var(--text-color-main);
   padding: 40px;
+  font-family: 'Permanent Marker', cursive;  
+font-size: 1.2em;
+letter-spacing: 0.19em;
 }
 
 .buttons {
@@ -674,7 +700,8 @@ p {
 }
 
 .card-text {
-  background-color: rgba(252, 252, 252, 0.747);
+  background-color: var(--primary-color);
+  border-radius: 2%;
   /* border: black 1px solid;*/
 }
 
@@ -703,8 +730,13 @@ p {
 }
 
 .h1-work {
+  letter-spacing: 9px;
+
   margin-top: 50px;
+  font-family: 'Rock 3D', cursive;  font-size: 3.5em;
 }
+
+
 
 .card img {
   width: 80%;
