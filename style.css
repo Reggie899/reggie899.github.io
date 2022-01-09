@@ -114,7 +114,7 @@ footer a i {
 }
 
 footer a i:hover {
-  color:darkblue;
+  color: darkblue;
 }
 
 .info-update {
@@ -727,8 +727,8 @@ p {
 .moreGithub {
   width: 100%;
   text-align: center;
-font-size: 2em;
-  margin-bottom:5%;
+  font-size: 2em;
+  margin-bottom: 5%;
 }
 
 .moreGithub a i {
@@ -747,21 +747,17 @@ font-size: 2em;
 /* Mission Page - Relevant:*/
 
 .mission-title {
-font-family: "Permanent Marker", cursive;
-top: -68px;
-left: 18%;
- position: absolute;
+  font-family: "Permanent Marker", cursive;
+  top: -68px;
+  position: absolute;
 }
 
 .mission-text {
-  padding: 0 15%;
   margin-top: 7%;
   margin-bottom: 10%;
   letter-spacing: 00.075em;
-position: relative;
+  position: relative;
 }
-
-
 
 .mission-animation {
   margin-top: 5%;
@@ -972,6 +968,24 @@ position: relative;
 
 .title-contact {
   font-family: "Rock 3D", cursive;
+  margin-bottom: 3%;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+.eEmail,
+.linkedIn {
+  margin-top: 9%;
+  font-size: 2em;
+}
+
+.eEmail a i,
+.linkedIn a i {
+  color: var(--text-color-main);
 }
 
 /* media queries*/
@@ -986,6 +1000,26 @@ position: relative;
   }
   .text-me {
     padding: 0 5%;
+  }
+  .about-animation {
+    right: 10%;
+  }
+  .myImage {
+    top: 0;
+  }
+
+  .me {
+    margin-right: -400px;
+    margin-top: 20px;
+  }
+  .mission-animation {
+    margin-bottom: 25%;
+  }
+  .mission-text {
+    padding: 0 2%;
+  }
+  .mission-title {
+    left: 12%;
   }
 }
 
@@ -1039,6 +1073,21 @@ position: relative;
   .card {
     width: 80%;
   }
+  .about-animation {
+    top: 300px;
+    right: 35%;
+  }
+  .myImage {
+    top: 0;
+  }
+
+  .me {
+    margin-right: -100px;
+    margin-top: -30px;
+  }
+  .mission-animation {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 750px) {
@@ -1067,7 +1116,12 @@ position: relative;
   }
   .h1-work {
     margin-bottom: -7%;
-
+  }
+  .mission-text {
+    padding: 0 15%;
+  }
+  .mission-title {
+    left: 18%;
   }
 
   footer {
