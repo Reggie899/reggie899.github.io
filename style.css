@@ -1026,6 +1026,7 @@ p {
 @media (min-width: 300px) {
   .castle-image > img {
     height: 250px;
+    width: auto;
   }
   .light-box-surround {
     margin-right: 1%;
@@ -1049,9 +1050,9 @@ p {
   .castle-image {
     margin-left: 12%;
   }
-  .castle-image > img {
+  /*.castle-image > img {
     height: 100%;
-  }
+  }*/
 }
 
 @media (min-width: 500px) {
