@@ -1051,9 +1051,9 @@ p {
   }
   /*.castle-image > img {
     height: 100%;
-  }*/
+  }
 }
-
+*/
 @media (min-width: 500px) {
   .web-developer {
     margin-top: 100px;
