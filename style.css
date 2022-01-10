@@ -1040,9 +1040,8 @@ p {
 }
 
 @media (min-width: 400px) {
-  .castle-image > img {
-    height: 250px;
-  }
+
+  
   .light-box-surround {
     margin-left: 4%;
   }
