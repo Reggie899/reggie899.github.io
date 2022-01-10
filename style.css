@@ -372,7 +372,6 @@ footer a i:hover {
 .castle-image {
   z-index: 2;
   margin-left: 10%;
-
   position: relative;
   grid-column: 3;
   grid-row: 1 / span 5;
@@ -1023,7 +1022,7 @@ p {
   }
 }
 
-@media (min-width: 300px) {
+/*@media (min-width: 300px) {
   .castle-image > img {
     height: 250px;
     width: auto;
@@ -1043,7 +1042,7 @@ p {
 @media (min-width: 400px) {
 
   
-  .light-box-surround {
+  /*.light-box-surround {
     margin-left: 4%;
   }
 
@@ -1060,13 +1059,13 @@ p {
     margin-top: 100px;
   }
 
-  .light-box-surround {
+  /*.light-box-surround {
     margin-left: 7%;
   }
 
   .castle-image {
     margin-left: 10%;
-  }
+  }*/
   .text-me {
     padding: 0 10%;
   }
@@ -1169,9 +1168,6 @@ p {
   .castle-image {
     margin-left: -8%;
   }
-  .castle-image > img {
-    height: 300px;
-  }
 }
 
 @media (min-width: 1100px) {
@@ -1182,10 +1178,6 @@ p {
   .castle-image {
     margin-left: -10%;
   }
-
-  .castle-image > img {
-    height: 300px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -1195,10 +1187,6 @@ p {
 
   .castle-image {
     margin-left: -12%;
-  }
-
-  .castle-image > img {
-    height: 300px;
   }
 }
 
