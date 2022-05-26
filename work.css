@@ -42,11 +42,10 @@ h1 {
 
 header {
   /* border: 3px solid green; */
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
-  /* z-index: 20;
-    position: fixed; */
+  z-index: 20; 
   height: 25vh;
   max-height: 400px;
   width: 100vw;
@@ -84,15 +83,19 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid green; */
+  border: 2px solid green;
   margin-bottom: 8%;
 }
 
-.weatherApp {
+.showFirstWork {
+    margin-top: 37%;
+}
+
+.weatherApp, .quiz {
   /* position: relative; */
   height: 100%;
-  /* border: 2px solid purple; */
   margin: 6%;
+  /* border: 2px solid purple; */
   /* min-height: 80%; */
   width: 100%;
   display: flex;
@@ -100,7 +103,9 @@ main {
   justify-content: center;
 }
 
-.weatherApp a img {
+
+
+.weatherApp a img, .quiz a img {
     margin-top: 2%;
     margin-bottom: 5%;
     height: 30vh;
@@ -109,19 +114,19 @@ main {
     border: 10px solid rgba(255, 192, 203, 0.624);
 }
 
-.weatherApp a {
+.weatherApp a, .quiz a{
     /* border: 9px solid green; */
     display: flex;
     justify-content: center;
 }
 
-.weatherApp h2 {
+.weatherApp h2, .quiz h2 {
     padding-top: 7px;
     margin: 0 auto;
     color: black;
 }
 
-.weatherApp h2 a {
+.weatherApp h2 a, .quiz h2 a {
    text-decoration: none;
    color: black;
 }
