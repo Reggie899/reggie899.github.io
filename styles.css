@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.852);
+}
+
+h1,
+h2 {
+  padding-left: 2%;
+  font-weight: lighter;
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1 span,
+h2 span {
+  font-size: 4em;
+}
+
+h1 {
+    bottom: 4%;
+}
+
+h2 {
+    bottom: 0;
+}
+
+header {
+    padding-left: 3%;  
+  z-index: 20;
+  position: fixed;
+  height: 15vh;
+  max-height: 400px;
+  width: 100vw;
+  margin: 0;
+  background-color: grey;
+  /* border: 3px solid magenta; */
+}
+
+.firstBlock {
+  position: relative;
+  height: 60vh;
+  min-height: 800px;
+  /* border: 3px solid green; */
+}
+
+.leftPole {
+  position: relative;
+}
+
+.pole {
+  height: 100%;
+  width: 15vw;
+  background-color: grey;
+  z-index: -1;
+}
+
+.rightPole {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  /* border: 3px solid purple; */
+}
+
+.middlePole {
+  bottom: 5%;
+  width: 40vw;
+  position: absolute;
+  left: 22%;
+  color: black;
+  /* border: 1px solid magenta; */
+  height: 30vh;
+  display: flex;
+  justify-content: end;
+}
+
+.secondBlock {
+  position: relative;
+  min-height: 500px;
+  max-height: 600px;
+  width: 100vw;
+  margin: 0;
+  z-index: -2;
+  background-color: grey;
+}
+
+.greyBlockH2 {
+  /* border: 5px solid green; */
+  min-height: 500px;
+  max-height: 600px;
+}
+
+.middlePoleGrey {
+  bottom: 35%;
+  width: 40vw;
+  position: absolute;
+  left: 22%;
+  color: white;
+  /* border: 1px solid magenta; */
+  height: 30vh;
+  display: flex;
+  justify-content: start;
+}
+
+.thirdBlock {
+  position: relative;
+  height: 30vh;
+  min-height: 800px;
+  /* border: 3px solid green; */
+}
+
+.fourthBlock {
+  position: relative;
+  min-height: 500px;
+  max-height: 600px;
+  width: 100vw;
+  margin: 0;
+  z-index: -2;
+  background-color: grey;
+}
+
+.bottomPoleGrey {
+    bottom: 35%;
+    width: 40vw;
+    position: absolute;
+    left: 22%;
+    color: white;
+    /* border: 1px solid magenta; */
+    height: 30vh;
+    display: flex;
+    justify-content: start;
+}
+
