@@ -27,7 +27,7 @@ h2 span {
 }
 
 h1 {
-    bottom: 4%;
+    bottom: 14%;
 }
 
 h2 {
@@ -38,7 +38,7 @@ header {
     padding-left: 3%;  
   z-index: 20;
   position: fixed;
-  height: 20vh;
+  height: 25vh;
   max-height: 400px;
   width: 100vw;
   margin: 0;
