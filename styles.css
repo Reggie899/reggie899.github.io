@@ -64,7 +64,7 @@ header {
 
 .firstPole {
     z-index: 10;
-    height: 200vh;
+    height: 170vh;
 }
 
 .rightPole {
@@ -132,7 +132,7 @@ header {
 }
 
 .bottomPoleGrey {
-    bottom: 10%;
+    bottom: 35%;
     width: 40vw;
     position: absolute;
     left: 22%;
