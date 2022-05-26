@@ -100,3 +100,8 @@ main {
 .workBox {
 background-color: rgb(169, 160, 160);
 }
+
+.work a {
+  text-decoration: none;
+  color: black;
+}
