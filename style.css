@@ -2,6 +2,13 @@ body {
   background-color: rgb(169, 160, 160);
 }
 
+nav {
+    /* border: 1px solid magenta; */
+    display: flex;
+    align-content: space-between;
+margin-top: 5%;
+}
+
 h1 {
   color: rgba(255, 255, 255, 0.852);
 }
@@ -55,13 +62,22 @@ header {
   height: 100%;
 }
 
+.withMenu {
+    padding-left: 10%;
+}
+
 main {
   /* border: 3px solid magenta; */
   display: flex;
   justify-content: center;
 }
 
-.main {
+.showWorkMain {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main, .showWork {
   background-image: url("background.jpg");
   background-size: cover;
   height: 50vh;
@@ -77,4 +93,10 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+
+
+.workBox {
+background-color: rgb(169, 160, 160);
 }
