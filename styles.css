@@ -48,7 +48,7 @@ header {
 
 .firstBlock {
   position: relative;
-  height: 70vh;
+  height: 80vh;
   min-height: 800px;
   /* border: 3px solid green; */
 }
@@ -58,11 +58,13 @@ header {
 }
 
 .pole {
-    z-index: 10;
-
-  height: 100vh;
   width: 15vw;
   background-color: grey;
+}
+
+.firstPole {
+    z-index: 10;
+    height: 200vh;
 }
 
 .rightPole {
