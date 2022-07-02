@@ -46,7 +46,7 @@ header {
   display: flex;
   justify-content: center;
   z-index: 20; 
-  height: 15vh;
+  height: 16vh;
   max-height: 400px;
   width: 100vw;
   margin: 0;
