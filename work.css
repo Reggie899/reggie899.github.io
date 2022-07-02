@@ -131,11 +131,10 @@ main {
 .weatherApp h2 a, .quiz h2 a {
    text-decoration: none;
    color: rgba(0, 0, 0, 0.644);
+   font-weight: bolder;
 }
 
-a {
-  font-weight: bolder;
-}
+
 
 .weatherApp h2:hover, .quiz h2:hover {
   font-weight: bold;
