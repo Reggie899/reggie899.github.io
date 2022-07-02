@@ -46,7 +46,7 @@ header {
   display: flex;
   justify-content: center;
   z-index: 20; 
-  height: 16vh;
+  height: 17vh;
   max-height: 400px;
   width: 100vw;
   margin: 0;
@@ -55,6 +55,7 @@ header {
 }
 
 .header {
+  padding-top: 20px;
   width: 100vw;
   /* border: 2px solid magenta; */
   height: 100%;
@@ -89,7 +90,7 @@ main {
 }
 
 .showFirstWork {
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
 .weatherApp, .quiz {
@@ -129,7 +130,11 @@ main {
 
 .weatherApp h2 a, .quiz h2 a {
    text-decoration: none;
-   color: black;
+   color: rgba(0, 0, 0, 0.644);
+}
+
+a {
+  font-weight: bolder;
 }
 
 .weatherApp h2:hover, .quiz h2:hover {
@@ -149,3 +154,5 @@ main {
   margin: 4%;}
 
 
+a {
+}
