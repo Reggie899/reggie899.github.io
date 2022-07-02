@@ -137,28 +137,15 @@ main {
 }
 
 .icons {
-    margin-top: 5%;
-    /* border: 2px solid green; */
-    display: flex;
-    justify-content: center;
-}
-
-.icons img {
-    height: 30px;
-    margin: 2%;
-}
-
-
-.iconsNode {
   margin-top: 5%;
   /* border: 2px solid green; */
   display: flex;
-  max-width: fit-content;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.iconsNode img {
+.icons img {
   height: 30px;
-  margin: 2%;
-}
+  margin: 4%;}
+
+
