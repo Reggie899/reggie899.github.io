@@ -23,7 +23,8 @@ h2 {
 h1,
 h2,
 p,
-li, button {
+li,
+button {
   /* padding-left: 2%; */
   font-weight: lighter;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -127,22 +128,21 @@ p {
 }
 
 li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 li a:hover {
-    color: white;
-    font-weight: bolder;
+  color: white;
+  font-weight: bolder;
 }
 
 button {
-    color: white;
-    opacity: 0;
+  color: white;
+  opacity: 0;
   border: none;
   background-color: transparent;
   animation: skills2 2s 3s forwards;
-
 }
 
 button:hover {
