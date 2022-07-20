@@ -11,10 +11,14 @@
 nav {
   /* border: 1px solid magenta; */
   display: flex;
-  align-content: space-between;
-  margin-top: 5%;
+  /* align-content: space-between; */
+  /* margin-top: 5%; */
+  /* align-items: baseline; */
   position: relative;
   z-index: 20;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 
 h1,
@@ -57,6 +61,7 @@ header {
   /* border: 3px solid green; */
   position: fixed;
   display: flex;
+  /* align-items: center; */
   justify-content: center;
   z-index: 20;
   height: 16vh;
@@ -71,10 +76,14 @@ header {
   width: 100vw;
   /* border: 2px solid magenta; */
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .withMenu {
-  padding-left: 10%;
+  margin-bottom: 0;
+   padding-left: 10%;
+   width: 60vw;;
 }
 
 main {
