@@ -100,12 +100,12 @@ main {
 }
 
 
-.boxA a {
+.boxA div a {
   color: white;
   text-decoration: none;
 }
 
-.boxA a:hover {
+.boxA div a:hover {
   color: pink;
 }
 
