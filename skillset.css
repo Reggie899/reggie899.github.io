@@ -98,7 +98,7 @@ main {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .skillTitle {
@@ -231,7 +231,7 @@ li a:hover {
   padding: 3%;
 }
 
-@media (min-width: 700px) {
+ @media (min-width: 1200px) { 
   .skills, .moreButton {
     margin-top: -7%;
   }
@@ -260,9 +260,94 @@ li a:hover {
         border-radius: 0;
       }
       100% {
+        margin-top: -8%;
+        width: 100vw;
+        border-radius: 0;
+      }
+  }
+} 
+
+@media (min-width: 1500px) { 
+  .skills, .moreButton {
+    margin-top: -7%;
+  }
+  .skillTitle {
+    height: 250px;
+    width: 250px;
+  }
+  @keyframes skills {
+    
+      0% {
+        margin-top: -1%;
+      }
+      20% {
+        margin-top: +30%;
+      }
+      35% {
+        margin-top: +28%;
+      }
+      68% {
+        margin-top: -20%;
+        width: 250px;
+        border-radius: 50%;
+      }
+      98% {
+        margin-top: -10%;
+        width: 100vw;
+        border-radius: 0;
+      }
+      100% {
+        margin-top: -7.5%;
+        width: 100vw;
+        border-radius: 0;
+      }
+  }
+} 
+
+@media (max-width: 991px) {
+  .nav-link {
+    border: 2px solid rgba(255, 192, 203, 0.429);
+      background-color: rgb(169, 160, 160);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-radius:8%;
+    }      
+}
+
+@media (max-width: 900px) {
+  .skillTitle {
+ height: 125px;
+ width: 125px;
+    }      
+
+    @keyframes skills {
+    
+      0% {
+        font-size: 1em;
+        margin-top: -1%;
+      }
+      20% {
+        margin-top: +30%;
+      }
+      35% {
+        margin-top: +28%;
+      }
+      68% {
+        margin-top: -20%;
+        width: 125px;
+        border-radius: 50%;
+      }
+      98% {
+        margin-top: -10%;
+        width: 100vw;
+        border-radius: 0;
+      }
+      100% {
         margin-top: -9%;
         width: 100vw;
         border-radius: 0;
+        font-size: 1em;
       }
   }
 }
