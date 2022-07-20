@@ -115,12 +115,12 @@ main {
 }
 
 .boxA div a:hover {
-  color: pink;
+  color: rgba(255, 192, 203, 0.768);
 }
 
 .boxA div:hover {
   cursor: pointer;
-  color: pink;
+  color: rgba(255, 192, 203, 0.806);
   font-weight: bolder;
 }
 
