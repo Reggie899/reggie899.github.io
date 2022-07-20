@@ -118,8 +118,12 @@ padding: 10%;
 
 
 .contact a {
-  color: magenta;
+  color: rgba(255, 0, 255, 0.566);
 text-decoration: none;
+}
+
+.contact a:hover {
+  color: rgba(255, 0, 255, 0.838)
 }
 
 

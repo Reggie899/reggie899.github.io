@@ -19,6 +19,7 @@
     <title>Regina Schmidt - Contact</title>
   </head>
   <body>
+      <div class="background">
     <header>
       <div class="header">
         <a href="./index.html"
@@ -66,9 +67,19 @@
     </header>
 
     <main>
-        <div class="boxA">linkedIn</div>
+        <div class="boxA"><div><a href="https://www.linkedin.com/in/regina-schmidt/" target="_blank">LinkedIn</a></div>
+    <div onClick="myEmail()">e-mail</div>
         <!-- <div>regina.schmidt@posteo.de</div> -->
-
+    </div>
     </main>
+    <div class="email hidden" id="email">regina.schmidt@posteo.de</div>
+</div>
+
+<script>
+    function myEmail() {
+      let email = document.getElementById("email");
+      email.classList.toggle("hidden");
+    }
+  </script>
   </body>
 </html>
