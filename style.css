@@ -128,9 +128,8 @@ main a:hover,
   opacity: 70%;
 }
 
-
-
-@media  (min-width: 700px) {
+@media (min-width: 700px) {
   header {
-margin-bottom: 0%;  }
+    margin-bottom: 0%;
+  }
 }
