@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("background.jpg");
+}
+
 .background {
   height: 100vh;
   background-image: url("background.jpg");
@@ -34,7 +38,7 @@ li,
 button,
 .boxA,
 .email,
-h6 {
+h6, footer {
   /* padding-left: 2%; */
   font-weight: lighter;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -149,6 +153,23 @@ main {
 
 .hidden {
   visibility: hidden;
+}
+
+footer {
+  color: white;
+  margin: 3% 7% 7% 7%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white
+}
+
+footer a:hover {
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media (min-width: 900px) {
