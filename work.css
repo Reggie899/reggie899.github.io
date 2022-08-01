@@ -50,6 +50,7 @@ h1 {
 
 h6 {
   letter-spacing: 3px;
+  /* border: green 2px solid; */
 }
 
 header a {
@@ -64,6 +65,7 @@ header {
   justify-content: space-evenly;
   z-index: 20;
   height: 16vh;
+  min-height: 140px;;
   max-height: 400px;
   width: 100vw;
   margin: 0;
@@ -113,7 +115,7 @@ main {
 }
 
 .showFirstWork {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .weatherApp, .quiz {
