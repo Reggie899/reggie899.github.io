@@ -206,3 +206,46 @@ main {
         border-radius:8%;
       }      
   }
+
+  @media (min-width: 1000px) {
+    .main1 {
+      margin-top: 200px;
+    }
+    .showWork {
+      /* position: relative; */
+      background-image: url("background.jpg");
+      background-size: cover;
+      min-height: 40vh;
+      width: 40vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      /* border: 5px solid green; */
+      margin-bottom: 8%;
+  
+    }
+    .weatherApp a img, .quiz a img {
+      /* position: relative; */
+      margin-top: 2%;
+      margin-bottom: 5%;
+      height: 300px;
+      width: auto;
+      object-fit: contain;
+      border: 10px solid rgba(255, 192, 203, 0.624);
+  }
+    .main {
+      width: 90vw;
+      margin: 0 auto;
+      display: grid;
+      /* background-color: blue;; */
+      /* border: 2px solid white; */
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-rows: auto; */
+      gap: 14px solid white; 
+        }   
+        .showFirstWork {
+          margin-top: 0;
+        }
+       
+  }
