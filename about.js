@@ -1,0 +1,23 @@
+let p = document.getElementById("p");
+let p2 = document.getElementById("p2");
+let wordButton = document.getElementById("wordButton");
+let wordButton2 = document.getElementById("wordButton2");
+let button = document.getElementById("bionicButton");
+
+const seeResults = () => {
+  axios
+    .get("http://localhost:5555/hello")
+    // .then(res => console.log("here", res.data))
+    .then((res) => (p2.innerHTML = res.data));
+};
+
+function bionicReading() {
+  // var element = document.getElementById("myDIV");
+  p.classList.toggle("mystyle");
+  p2.classList.toggle("mystyle2");
+  wordButton.classList.toggle("wordButton");
+  wordButton2.classList.toggle("wordButton2");
+  button.classList.toggle("buttonStyle2");
+}
+
+seeResults();
