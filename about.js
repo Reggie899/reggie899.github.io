@@ -3,6 +3,7 @@ let p2 = document.getElementById("p2");
 let wordButton = document.getElementById("wordButton");
 let wordButton2 = document.getElementById("wordButton2");
 let button = document.getElementById("bionicButton");
+const axios = require("axios");
 
 
 const seeResults = () => {
