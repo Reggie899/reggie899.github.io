@@ -6,7 +6,7 @@ let button = document.getElementById("bionicButton");
 
 const seeResults = () => {
   axios
-    .get("http://localhost:5555/hello")
+    .get("https://bionic-reading-backend.herokuapp.com/")
     // .then(res => console.log("here", res.data))
     .then((res) => (p2.innerHTML = res.data));
 };
