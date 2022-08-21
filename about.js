@@ -4,9 +4,10 @@ let wordButton = document.getElementById("wordButton");
 let wordButton2 = document.getElementById("wordButton2");
 let button = document.getElementById("bionicButton");
 
+
 const seeResults = () => {
   axios
-    .get("https://bionic-reading-backend.herokuapp.com/")
+  .get("https://bionic-reading-backend.herokuapp.com/")
     // .then(res => console.log("here", res.data))
     .then((res) => (p2.innerHTML = res.data));
 };
