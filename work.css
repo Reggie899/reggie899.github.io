@@ -143,6 +143,17 @@ main {
   border: 10px solid rgba(255, 192, 203, 0.624);
 }
 
+.shorter a img {
+  border: 2px solid blue;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  height: 30vh;
+  max-width: 100%;
+  object-fit: cover;
+  border: 10px solid rgba(255, 192, 203, 0.624);
+}
+
+
 .weatherApp a,
 .quiz a {
   /* border: 9px solid green; */
@@ -152,6 +163,7 @@ main {
 
 .weatherApp h2,
 .quiz h2 {
+  /* border: 9px solid green; */
   padding-top: 7px;
   margin: 0 auto;
   color: black;
@@ -159,9 +171,15 @@ main {
 
 .weatherApp h2 a,
 .quiz h2 a {
+  /* border: 9px solid green; */
   text-decoration: none;
   color: rgba(0, 0, 0, 0.644);
   font-weight: bolder;
+}
+
+h2 a {
+  /* border: 9px solid green; */
+  text-align: center;
 }
 
 .weatherApp h2:hover,
@@ -208,6 +226,11 @@ footer a:hover {
     justify-content: center;
     border-radius: 8%;
   }
+}
+
+.interactiveDialogue {
+  background-image: url("interactiveDialogue.gif");
+  background-position-x: -55px;
 }
 
 @media (min-width: 1000px) {
@@ -292,10 +315,16 @@ footer a:hover {
     background-image: url("name_generator.png");
     background-position-x: -30px;
   }
+  .interactiveDialogue {
+    background-image: url("interactiveDialogue.gif");
+    background-position-x: 45%;
+  }
+
   .workImg,
   .quizImg,
   .dictionImg,
-  .nameImg {
+  .nameImg,
+  .interactiveDialogue {
     width: 20vw;
     height: 20vw;
     background-size: cover;
@@ -316,7 +345,8 @@ footer a:hover {
   .workImg,
   .quizImg,
   .dictionImg,
-  .nameImg {
+  .nameImg, 
+  .interactiveDialogue {
     height: 15vw;
     width: 15vw;
   }
@@ -332,5 +362,9 @@ footer a:hover {
   .nameImg {
     background-image: url("name_generator.png");
     background-position-x: -26px;
+  }
+  .interactiveDialogue {
+    background-image: url("interactiveDialogue.gif");
+    background-position-x: 42%;
   }
 }
