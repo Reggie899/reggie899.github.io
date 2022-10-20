@@ -110,8 +110,10 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  /* flex-wrap: wrap; */
   /* border: 2px solid green; */
   margin-bottom: 8%;
+  overflow: hidden;
 }
 
 .showFirstWork {
@@ -248,7 +250,7 @@ footer a:hover {
   .flex {
     width: 65vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     gap: 6px;
     flex-wrap: wrap;
