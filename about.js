@@ -1,4 +1,4 @@
-import REQUEST_KEY from "./requests.js";
+//import REQUEST_KEY from "./requests.js";
 let p = document.getElementById("p");
 let p2 = document.getElementById("p2");
 let p3 = document.getElementById("p3");
