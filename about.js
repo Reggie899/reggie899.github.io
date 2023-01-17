@@ -139,4 +139,4 @@ function requestBionic3() {
     });
 }
 
-requestBionic3();
+// requestBionic3();
