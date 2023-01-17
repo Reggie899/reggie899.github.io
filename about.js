@@ -46,7 +46,7 @@ function requestBionic1() {
     url: "https://bionic-reading1.p.rapidapi.com/convert",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
-      "X-RapidAPI-Key": `${REQUEST_KEY}`,
+     // "X-RapidAPI-Key": `${REQUEST_KEY}`,
       "X-RapidAPI-Host": "bionic-reading1.p.rapidapi.com",
     },
     data: encodedParams1,
@@ -85,7 +85,7 @@ function requestBionic2() {
     url: "https://bionic-reading1.p.rapidapi.com/convert",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
-      "X-RapidAPI-Key": `${REQUEST_KEY}`,
+    //  "X-RapidAPI-Key": `${REQUEST_KEY}`,
       "X-RapidAPI-Host": "bionic-reading1.p.rapidapi.com",
     },
     data: encodedParams2,
@@ -122,7 +122,7 @@ function requestBionic3() {
     url: "https://bionic-reading1.p.rapidapi.com/convert",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
-      "X-RapidAPI-Key": `${REQUEST_KEY}`,
+     // "X-RapidAPI-Key": `${REQUEST_KEY}`,
       "X-RapidAPI-Host": "bionic-reading1.p.rapidapi.com",
     },
     data: encodedParams3,
